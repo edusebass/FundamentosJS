@@ -125,3 +125,94 @@ console.log(Number.parseFloat(precioJuego));
 console.log(Number.isInteger(edadJugador));
 
 console.log(`${+edadJugador + +precioJuego}`);
+
+////////////////////////////////////////////////////////////////
+
+//BOLEANOS
+
+// operadores de asignación 
+let saldoTarjetaUsuario = 500
+let saldoTarjeta = 1000
+let estadoCuenta
+let emailConfirmado=null
+
+
+// operadores de asignación de adición
+saldoTarjetaUsuario += 100
+console.log(saldoTarjetaUsuario);
+
+// operadores de comparación
+saldoTarjetaUsuario="1000"
+console.log(saldoTarjeta == saldoTarjetaUsuario)
+// evalua tipo de dato y contenido
+console.log(saldoTarjeta === saldoTarjetaUsuario)
+console.log(estadoCuenta === emailConfirmado);
+
+
+// operadores aritméticos
+console.log(saldoTarjeta + parseInt(saldoTarjetaUsuario));
+
+
+// operadores lógicos 
+console.log(saldoTarjeta != saldoTarjetaUsuario);
+
+// evalua tipo de dato y contenido
+console.log(saldoTarjeta !== parseInt(saldoTarjetaUsuario));
+
+//operador ternario
+// let saldoTarjetaUsuario = 500
+// let saldoTarjeta = 1000
+
+const respuesta = saldoTarjeta <= saldoTarjetaUsuario ? "Pagar" : "Seguir consumiendo"
+console.log(respuesta);
+
+
+////////////////////////////////////////////////////////////////
+
+//BUCLES
+
+//for
+let contador = 10
+
+for (let i = contador; i >= 0; i--) {
+    
+    i <=0 ? console.log("Comida lista"):console.log(i);
+}
+
+//while
+// let contador2 = 10
+while (contador >= 0)
+{
+    contador<=0 ? console.log("Comida lista"):console.log(contador)
+    contador--
+}
+
+//do while
+do {
+    contador<=0 ? console.log("Comida lista"):console.log(contador)
+    contador--
+} while (contador >= 0);
+
+const tareasPendientes = ['Trabajar','Estudiar','Nadar','Viajar','Aprender Js']
+const usuario ={
+    nombre:"Byron",
+    apellido:"Loarte",
+}
+
+// uso del forEach 
+tareasPendientes.forEach((t,i)=> console.log(`${i} - ${t}`))
+
+// uso del for of -> usado para arreglos
+for (const t of tareasPendientes) {
+    console.log(`${t}`)
+}
+
+
+// uso del for in -> usado para objetos
+for (const clave in usuario) {
+    console.log(`${usuario[clave]}`)
+}
+
+// uso del map -> retorna un nuevo arreglo
+const nuevasTareas = tareasPendientes.map((t)=> t)
+console.log(nuevasTareas);
