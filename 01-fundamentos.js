@@ -293,3 +293,21 @@ function hello(){
     }()
 }
 console.log(hello())
+
+//funciones flecha
+
+function login(user,password){
+    console.log("Usuario y password válidos");
+}
+//          son lo mismo
+const validarMail = (user,email) => {
+    console.log("El emial ha sido verificado")
+}
+
+const registrarAvatar = (photo) => {
+    console.log("El avatar ha sido registrado");
+}
+
+login()
+validarMail()
+registrarAvatar()
