@@ -3,3 +3,6 @@ console.log("holallalalalala")
 console.log("Que mas oyen")
 console.log("Que mas oyen")
 
+//Comentario de una linea
+/*Comentarios de varias
+lineas*/ 
