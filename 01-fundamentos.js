@@ -216,3 +216,80 @@ for (const clave in usuario) {
 // uso del map -> retorna un nuevo arreglo
 const nuevasTareas = tareasPendientes.map((t)=> t)
 console.log(nuevasTareas);
+
+////////////////////////////////////////////////////////////////
+
+//FUNCIONES
+
+function hello(){
+    console.log("funcion declarada")
+}
+hello()
+
+const expresada = function(){
+    console.log("funcion expresada")
+}
+expresada()
+
+//funciones anonimas y autoejecutada
+console.log(function(){
+    return "esto es una prueba de para validar una cuenta"
+}());
+
+(function(){
+    console.log("función para validar datos del usuario")
+})()
+
+// const buscador = document.querySelector('#search-178')
+// const button = document.createElement("button")
+// button.innerText="Hello React"
+// buscador.appendChild(button);
+
+// button.addEventListener('click', function(){
+//     alert("Usuario registrado")
+// })
+
+//PARAMETROS Y ARGUMENTOS
+function hello(nameOne,nameTwo){
+    return "welcome "+ nameOne + " and "+nameTwo
+}
+
+console.log(hello('Js','React'))
+
+// Parámetros por default
+//
+// En una función se puede especificar parámetros opcionales.
+function hello(nameOne,nameTwo="Node.Js"){
+    
+    return "welcome "+ nameOne + " and "+nameTwo
+}
+
+
+//Parámetros rest
+// con args se puede mandar lo que uno quiera
+const precioFinalItems = function(a,b,...args){
+    let suma = 0;
+    var total = suma+a+b
+    if(args.length>0) args.forEach(e =>total+=e)
+    return total
+}
+
+console.log(precioFinalItems(10,20,40,50,10))
+
+//retorno de un funcion
+function hello(){
+    
+    return "hola Js"
+    // return 123 
+    // return true 
+    // return ['Peter','Mike','Camila','Joe']
+    // return {
+    //     name:"Byron",
+    //     lastname:"Loarte",
+    //     age:34
+    // }
+    // return function(){
+    //     return "Hello Js"
+    // }
+}
+console.log(hello())
