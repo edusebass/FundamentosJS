@@ -114,3 +114,14 @@ console.log(3 + 4 * 5)
 console.log(4 * 3 ** 2)
 console.log(200 * 0.2)
 console.log(200 * 1.12)
+
+//conversiones
+let edadJugador = "20"
+let precioJuego = "525.63"
+
+console.log(Number.parseInt(edadJugador));
+console.log(Number.parseFloat(precioJuego));
+
+console.log(Number.isInteger(edadJugador));
+
+console.log(`${+edadJugador + +precioJuego}`);
