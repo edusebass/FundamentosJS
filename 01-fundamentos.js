@@ -24,8 +24,9 @@ dato = {
     nombre: "Juan",
     puntosVida: 234
 }
-
 console.log(dato.puntosVida)
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 //strings
 let nombreJuego = "MarioKart"
@@ -65,3 +66,21 @@ console.log("Útil para saber el prefijo del vuelo que indica la aerolínea:",nu
 let userAdmin = "Byron Loarte"
 let avatarUser = userAdmin.split(" ")
 console.log("Útil para cortar un texto y colocar como avatar de perfil:",avatarUser[0].charAt(0),avatarUser[1].charAt(0));
+
+//template literals
+'use strict';
+
+// let nombreJuego = "Mario Kart"
+let tipoJuego = 'Carreras'
+
+console.log(nombreJuego,tipoJuego);
+
+'use strict';
+
+const name = "Byron"
+const lastName= "Loarte"
+const city ="Quito"
+const age = 34
+const active = false
+console.log(name+"-"+lastName+"-"+city)
+console.log(`${name} - ${lastName} - ${city} - ${active ? age : 'No se encuentra activo'}`);
