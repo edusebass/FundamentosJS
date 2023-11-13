@@ -301,7 +301,7 @@ function login(user,password){
 }
 //          son lo mismo
 const validarMail = (user,email) => {
-    console.log("El emial ha sido verificado")
+    console.log("El email ha sido verificado")
 }
 
 const registrarAvatar = (photo) => {
@@ -310,4 +310,4 @@ const registrarAvatar = (photo) => {
 
 login()
 validarMail()
-registrarAvatar()
+                                             
