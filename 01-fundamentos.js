@@ -279,7 +279,7 @@ console.log(precioFinalItems(10,20,40,50,10))
 //retorno de un funcion
 function hello(){
     
-    return "hola Js"
+    // return "hola Js"
     // return 123 
     // return true 
     // return ['Peter','Mike','Camila','Joe']
@@ -288,8 +288,8 @@ function hello(){
     //     lastname:"Loarte",
     //     age:34
     // }
-    // return function(){
-    //     return "Hello Js"
-    // }
+    return function(){
+        return "Hello Js"
+    }()
 }
 console.log(hello())
