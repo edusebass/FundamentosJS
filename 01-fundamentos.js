@@ -9,7 +9,7 @@ console.log("Que mas oyen")
 lineas*/ 
 
 
-//variables
+//VARIABLES
 /* var no se recomienda*/
 let nombre = "Juan"
 let puntosVida = 234
@@ -28,7 +28,7 @@ console.log(dato.puntosVida)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
-//strings
+//STRINGS
 let nombreJuego = "MarioKart"
 
 console.log("Número de letras:",nombreJuego.length);
@@ -42,8 +42,6 @@ console.log("Cortar un texto:",nombreJuego.substring(1,6));
 console.log("Cortar un texto:",nombreJuego.charAt(1));
 console.log("Repetir un texto:",nombreJuego.repeat(2));
 console.log("Dividir un texto:",nombreJuego.split(" "));
-
-'use strict';
 
 let formUsername = 'Tosh'
 console.log("Útil para validar el campo nombre del formulario:",formUsername.length);
@@ -68,14 +66,11 @@ let avatarUser = userAdmin.split(" ")
 console.log("Útil para cortar un texto y colocar como avatar de perfil:",avatarUser[0].charAt(0),avatarUser[1].charAt(0));
 
 //template literals
-'use strict';
 
 // let nombreJuego = "Mario Kart"
 let tipoJuego = 'Carreras'
 
 console.log(nombreJuego,tipoJuego);
-
-'use strict';
 
 const name = "Byron"
 const lastName= "Loarte"
@@ -84,3 +79,38 @@ const age = 34
 const active = false
 console.log(name+"-"+lastName+"-"+city)
 console.log(`${name} - ${lastName} - ${city} - ${active ? age : 'No se encuentra activo'}`);
+
+////////////////////////////////////////////////////////////////
+
+//NUMBERS
+
+// Es importante reconocer el tipo de valor asignado
+const numeroVidas = "20"
+const numeroPuntos = 20
+
+console.log(numeroPuntos,numeroVidas);
+console.log(typeof(numeroPuntos), typeof(numeroVidas));
+
+console.log("suma:",numeroPuntos+20);
+console.log("resta:",numeroPuntos-20);
+console.log("multiplicación:",numeroPuntos*20);
+console.log("división:",numeroPuntos/20);
+console.log("módulo:",numeroPuntos%20);
+
+
+// Importante el manejo de operadores de incremento y decremento
+let numeroPuntosActual = 20
+
+console.log(++numeroPuntosActual );
+console.log(numeroPuntosActual++);
+
+let numeroVidasActual = 20
+
+console.log(--numeroVidasActual);
+console.log(numeroVidasActual--);
+
+//presedencia
+console.log(3 + 4 * 5)
+console.log(4 * 3 ** 2)
+console.log(200 * 0.2)
+console.log(200 * 1.12)
