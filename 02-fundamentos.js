@@ -72,3 +72,7 @@ const newData = arreglo.map((e) => {
 })
 console.log(newData)
 
+
+//desestructuracion
+const [numero1, numero2, numero3, numero4, names] = arreglo
+console.log(numero1, numero2, numero3, numero4, names)
