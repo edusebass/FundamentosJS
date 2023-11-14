@@ -23,7 +23,22 @@ const user = {
     }
 }
 
-console.log( JSON.stringify(user.bestFriend.lastname))
+console.log(JSON.stringify(user))
+console.log((user))
 
+//desustrucutaracion de objetos
+const {name, edad , moreFriends, activo} = user
+console.log(user)
+
+//unir objetos
+const address = {
+    city: "granada",
+    country: "croacia",
+    calle: "Calle 12323",
+    secundaria: "calle secun"
+}
+
+const allinformation = {...user, ...address}
+console.log(allinformation)
 
 
