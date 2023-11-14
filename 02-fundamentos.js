@@ -42,3 +42,33 @@ const allinformation = {...user, ...address}
 console.log(allinformation)
 
 
+//ARREGLOS
+
+const arr = [1,2,3,4,5,6,7,8,9,10]
+
+console.log(arr.length)
+console.log(arr[0])
+console.log(arr[9])
+
+// arr.push() mete al final
+// arr.unshift(1) mete al incio
+
+// arr.pop() elimina el ultimo
+// arr.shift() elimina el ultimo
+
+
+const findOne =  arr.find( e => e != 9)
+const findTwo =  arr.find((e) => e === "Juan")
+
+console.log("Console principal: ", arr)
+
+console.log(findOne)
+console.log(findTwo)
+
+const arreglo = ["1", "2", "3", "4", "eduardo"]
+
+const newData = arreglo.map((e) => { 
+    return e.toUpperCase()
+})
+console.log(newData)
+
