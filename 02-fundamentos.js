@@ -1,78 +1,72 @@
-//OBJETO
-const user = {
-    name:"Byron",
-    lastname:"Loarte",
-    age:34,
-    email:"eduardo@gmail.com",
+// OBJETOS
+const usuario = {
+    nombre: "Byron",
+    apellido: "Loarte",
+    edad: 34,
+    correo: "eduardo@gmail.com",
     activo: true,
-    address: {
-        city: "Madrid",
-        country: "Spain",
+    direccion: {
+        ciudad: "Madrid",
+        pais: "España",
         calle: "Calle abc",
         secundaria: "calle 1123312"
     },
-    edad:35,
-    bestFriend: {
-        name: "Peter",
-        lastname: "Loarte",
-        age:34
+    edadExtra: 35,
+    mejorAmigo: {
+        nombre: "Peter",
+        apellido: "Loarte",
+        edad: 34
     },
-    moreFriends: ["Peter", "JOse", "Mijin"],
-    sendMail(){
-        return `send mail to ${this.moreFriends[1]}`
+    masAmigos: ["Peter", "JOse", "Mijin"],
+    enviarCorreo() {
+        return `Enviar correo a ${this.masAmigos[1]}`
     }
 }
 
-console.log(JSON.stringify(user))
-console.log((user))
+console.log(JSON.stringify(usuario));
+console.log((usuario));
 
-//desustrucutaracion de objetos
-const {name, edad , moreFriends, activo} = user
-console.log(user)
+// DESESTRUCTURACIÓN DE OBJETOS
+const { nombre, edadExtra, masAmigos, activo } = usuario;
+console.log(nombre, edadExtra, masAmigos, activo);
 
-//unir objetos
-const address = {
-    city: "granada",
-    country: "croacia",
+// UNIR OBJETOS
+const nuevaDireccion = {
+    ciudad: "Granada",
+    pais: "Croacia",
     calle: "Calle 12323",
     secundaria: "calle secun"
 }
 
-const allinformation = {...user, ...address}
-console.log(allinformation)
+const todaLaInformacion = { ...usuario, ...nuevaDireccion };
+console.log(todaLaInformacion);
 
+// ARREGLOS
+const arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-//ARREGLOS
+console.log(arreglo.length);
+console.log(arreglo[0]);
+console.log(arreglo[9]);
 
-const arr = [1,2,3,4,5,6,7,8,9,10]
+arreglo.push(11); // Agregar al final
+arreglo.unshift(0); // Agregar al inicio
 
-console.log(arr.length)
-console.log(arr[0])
-console.log(arr[9])
+arreglo.pop(); // Eliminar el último
+arreglo.shift(); // Eliminar el primero
 
-// arr.push() mete al final
-// arr.unshift(1) mete al incio
+const encontrarUno = arreglo.find(e => e !== 9);
+const encontrarDos = arreglo.find((e) => e === "Juan");
 
-// arr.pop() elimina el ultimo
-// arr.shift() elimina el ultimo
+console.log("Consola principal: ", arreglo);
 
+console.log(encontrarUno);
+console.log(encontrarDos);
 
-const findOne =  arr.find( e => e != 9)
-const findTwo =  arr.find((e) => e === "Juan")
+const nuevosDatos = arreglo.map((e) => {
+    return e * 2;
+});
+console.log(nuevosDatos);
 
-console.log("Console principal: ", arr)
-
-console.log(findOne)
-console.log(findTwo)
-
-const arreglo = ["1", "2", "3", "4", "eduardo"]
-
-const newData = arreglo.map((e) => { 
-    return e.toUpperCase()
-})
-console.log(newData)
-
-
-//desestructuracion
-const [numero1, numero2, numero3, numero4, names] = arreglo
-console.log(numero1, numero2, numero3, numero4, names)
+// DESESTRUCTURACIÓN DE ARREGLOS
+const [numero1, numero2, numero3, numero4, nombres] = arreglo;
+console.log(numero1, numero2, numero3, numero4, nombres);
