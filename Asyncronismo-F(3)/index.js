@@ -27,7 +27,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     }).catch((err) => console.log(err))
 
 
-const conectarAPI = async() => {
+const conectarAPI = async () => {
     try {
         const respuesta = await fetch("https://jsonplaceholder.typicode.com/users")
         const data = respuesta.json()
