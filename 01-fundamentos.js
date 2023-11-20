@@ -234,4 +234,27 @@ const registrarAvatar = (photo) => {
 login();
 validarMail();
 
+//funciones this
+// Objeto que contiene una función
+const persona = {
+    nombre: "Juan",
+    edad: 30,
+    saludar: function () {
+        console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años.`);
+    },
+};
+
+// Llamando a la función dentro del objeto
+persona.saludar();
+
+// Creando otra persona con el mismo formato y llamando a la función
+const otraPersona = {
+    nombre: "María",
+    edad: 25,
+    saludar: persona.saludar, // Asignando la función del objeto anterior
+};
+
+otraPersona.saludar();
+
+
 
