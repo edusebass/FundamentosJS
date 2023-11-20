@@ -1,3 +1,5 @@
+# Laboratorio 2 - Fundamentos y Funciones
+
 ## Temas
 
 Los temas que se emplearon fueron:
