@@ -1,34 +1,34 @@
 // OBJETOS
 
-const user = {
-    name: "Byron",
-    lastname: "Loarte",
-    age: 34,
+const estudiante = {
+    name: "Eduardo",
+    lastname: "Almachi",
+    age: 12,
     email: "eduardo@gmail.com",
     activo: true,
     address: {
-        city: "Madrid",
-        country: "Spain",
-        calle: "Calle abc",
-        secundaria: "calle 1123312"
+        city: "Granada",
+        country: "Spaña",
+        calle: "Calle Palencia",
+        secundaria: "edificio 5 5:E"
     },
     edad: 35,
     bestFriend: {
-        name: "Peter",
-        lastname: "Loarte",
-        age: 34
+        name: "Joel",
+        lastname: "Constante",
+        age: 19
     },
-    moreFriends: ["Peter", "Jose", "Mijin"],
+    moreFriends: ["Willians", "Henry", "Angel"],
     sendMail() {
-        return `send mail to ${this.moreFriends[1]}`;
+        return `Enviar notificacion ${this.moreFriends[1]}`;
     }
 };
 
-console.log(JSON.stringify(user));
-console.log(user);
+console.log(JSON.stringify(estudiante));
+console.log(estudiante);
 
 // Desestructuración de Objetos
-const { name, edad, moreFriends, activo } = user;
+const { name, edad, moreFriends, activo } = estudiante;
 console.log(name, edad, moreFriends, activo);
 
 // Unir Objetos
@@ -39,7 +39,7 @@ const address = {
     secundaria: "calle secun"
 };
 
-const allInformation = { ...user, ...address };
+const allInformation = { ...estudiante, ...address };
 console.log(allInformation);
 
 // ARREGLOS
