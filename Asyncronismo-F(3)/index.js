@@ -1,10 +1,5 @@
 // 3 formas de ejecutar codigo asincrono
-
 // callbacks
-
-
-// promesas
-
 const conexionBD = (datosConexion) => { 
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -16,13 +11,13 @@ conexionBD(true)
     .then((resultado) => console.log(resultado))
     .catch((err) => console.log(err))
 
-//asyn - await
- 
 
-//prueba de obtener datos
-const obtenerDatos = fetch("https://jsonplaceholder.typicode.com/users")
 
-obtenerDatos
+// Manejo de APIS
+
+// promesas //asyn - await
+
+fetch("https://jsonplaceholder.typicode.com/users")
     .then((peticion) => peticion.json())
     .then((resultado) => {
         console.log(resultado)
@@ -30,5 +25,19 @@ obtenerDatos
         console.log("pr: " + resultado[9].username)
         console.log("pr: " + resultado[9].email)
     }).catch((err) => console.log(err))
+
+
+const conectarAPI = async() => {
+    try {
+        const respuesta = await fetch("https://jsonplaceholder.typicode.com/users")
+        const data = respuesta.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+conectarAPI()
+
 
     
