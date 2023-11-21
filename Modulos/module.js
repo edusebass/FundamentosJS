@@ -3,4 +3,9 @@ login = (user, pass) => {
     console.log(`Welcome to ${user}`)
 }
 
-module.exports = login
+const likes = 500
+
+module.exports = {
+    likes,
+    login
+}
