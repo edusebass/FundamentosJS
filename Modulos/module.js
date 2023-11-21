@@ -1,11 +1,15 @@
-login = (user, pass) => {
-    if(!user && pass) return console.log("No autorizado")
+
+const login = (user) => {
     console.log(`Welcome to ${user}`)
 }
 
 const likes = 500
 
-module.exports = {
-    likes,
-    login
-}
+//COMON JS
+// module.exports = {
+//     likes,
+//     login
+// }
+
+//ESMODULES
+export default login
